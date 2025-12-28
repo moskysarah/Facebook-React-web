@@ -1,0 +1,7 @@
+- [x] Import useRef from React in VideoCard.tsx
+- [x] Add videoRef using useRef<HTMLVideoElement>(null)
+- [x] Move video element to media section, replace img with video
+- [x] Add poster attribute to video using media prop
+- [x] Add play button above video with absolute positioning
+- [x] Add onClick handler to play button to call videoRef.current?.play()
+- [x] Remove video from header section
