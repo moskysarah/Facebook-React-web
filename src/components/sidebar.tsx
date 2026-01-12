@@ -40,7 +40,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
         />
       )}
 
-      <aside className={`w-70 bg-[#1C1C1D] dark:bg-gray-800 border-l-none p-4 flex flex-col fixed w-100 md:fixed top-16 md:top-16 left-0 h-full z-50 transform transition-transform duration-300 ease-in-out overflow-y-auto ${
+      <aside className={`w-70 md:w-70 lg:w-80 xl:w-100 bg-[#1C1C1D] dark:bg-gray-800 border-l-none p-4 flex flex-col fixed top-16 left-0 h-full z-50 transform transition-transform duration-300 ease-in-out overflow-y-auto ${
         isOpen ? 'translate-x-0' : '-translate-x-full'
       } md:translate-x-0 md:flex`}>
 

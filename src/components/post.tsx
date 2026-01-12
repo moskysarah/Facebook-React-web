@@ -13,7 +13,7 @@ type PostProps = {
 
 export default function Post({ avatar, name, time, text, image, likes, comments, shares, views }: PostProps) {
   return (
-    <div className="bg-[#252728] w-[38rem] rounded-xl p-3 mt-4">
+    <div className="bg-[#252728] w-full max-w-[38rem] md:max-w-[40rem] lg:max-w-[50rem] rounded-xl p-3 mt-4">
       {/* Header du post */}
       <div className="flex items-center gap-3">
         <img src={avatar} alt={name} className="w-10 h-10 rounded-full" />

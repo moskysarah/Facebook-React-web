@@ -1,7 +1,11 @@
-- [x] Import useRef from React in VideoCard.tsx
-- [x] Add videoRef using useRef<HTMLVideoElement>(null)
-- [x] Move video element to media section, replace img with video
-- [x] Add poster attribute to video using media prop
-- [x] Add play button above video with absolute positioning
-- [x] Add onClick handler to play button to call videoRef.current?.play()
-- [x] Remove video from header section
+# Responsive Facebook Dashboard Plan
+
+## Steps to Complete
+- [ ] Read feed.tsx to understand its structure.
+- [ ] Update App.tsx for responsive layout.
+- [ ] Update sidebar.tsx for better mobile handling.
+- [ ] Update header.tsx for mobile adjustments.
+- [ ] Update feed.tsx for responsive feed.
+- [ ] Update stories.tsx and post.tsx for responsiveness.
+- [ ] Update other components if needed.
+- [ ] Test and refine.

@@ -38,7 +38,7 @@ function App() {
         <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
 
         {/* Contenu */}
-        <main className="p-6 pt-26 md:ml-100">
+        <main className="flex-1 p-4 pt-20 md:pt-26 md:ml-70 lg:ml-80 xl:ml-100">
           <Routes>
             {/* <Route path="/login" element={<Login />} /> */}
             <Route path="/" element={<Login />} />
