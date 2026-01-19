@@ -36,19 +36,7 @@ This project focuses on modern frontend practices, reusable components, and resp
 - **Git & GitHub**  
 
 ## 📂 Project Structure
-src/
-├── components/
-│ ├── Navbar.tsx
-│ ├── Sidebar.tsx
-│ ├── Post.tsx
-│ └── AddCard.tsx
-├── pages/
-│ └── Home.tsx 
-├── SignUp.tsx
-├── Login.tsx
-├── App.tsx
-├── main.tsx
-└── index.css
+
 
 ⚙️ Installation
 Clone the repository:
