@@ -29,7 +29,8 @@ This project focuses on modern frontend practices, reusable components, and resp
 ## 🛠️ Tech Stack
 - **React**  
 - **TypeScript**  
-- **Tailwind CSS**  
+- **Tailwind CSS**
+- **Supabase**
 - **Chart Library** (Chart.js / Recharts)  
 - **Vite** or Create React App  
 - **Git & GitHub**  
@@ -37,7 +38,19 @@ This project focuses on modern frontend practices, reusable components, and resp
 ---
 
 ## 📂 Project Structure
-
+src/
+├── components/
+│ ├── Navbar.tsx
+│ ├── Sidebar.tsx
+│ ├── Post.tsx
+│ └── AddCard.tsx
+├── pages/
+│ └── Home.tsx 
+├── SignUp.tsx
+├── Login.tsx
+├── App.tsx
+├── main.tsx
+└── index.css
 
 ⚙️ Installation
 Clone the repository:
