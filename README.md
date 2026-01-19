@@ -35,8 +35,6 @@ This project focuses on modern frontend practices, reusable components, and resp
 - **Vite** or Create React App  
 - **Git & GitHub**  
 
----
-
 ## 📂 Project Structure
 src/
 ├── components/
