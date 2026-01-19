@@ -57,7 +57,7 @@ npm run dev
 
 ## 📸 Preview
 
-![Dashboard](screenshot/screenshoortfacebook.png)
+![Dashboard](screenshort/screenshoortfacebook.png)
 
 
 👩‍💻 Author
