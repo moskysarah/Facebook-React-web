@@ -55,7 +55,10 @@ npm install
 Start the development server:
 npm run dev
 
-![Dashboard Overview](screenshots/dashboard.png)
+## 📸 Preview
+
+![Dashboard](screenshot/screenshoortfacebook.png)
+
 
 👩‍💻 Author
 
