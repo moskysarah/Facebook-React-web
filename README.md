@@ -1,6 +1,4 @@
 
-
-
 📊 Facebook Dashboard
 📌 Description
 Facebook Dashboard is a web application built with React, TypeScript, and Tailwind CSS.
@@ -24,6 +22,7 @@ Chart Library (Chart.js / Recharts)
 Vite or Create React App
 Git & GitHub
 📂 Project Structure
+
 src/
 ├── components/
 │ ├── Navbar.tsx
