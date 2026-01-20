@@ -1,7 +1,7 @@
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom"
 import { useState } from "react"
 import Sidebar from "./components/sidebar"
+import Header from "./components/header"
 
 // Pages
 import Friends from "./pages/Friends"
@@ -13,12 +13,22 @@ import Marketplace from "./pages/MarketPlace"
 import Fils from "./pages/Fils"
 import Events from "./pages/Events"
 import ProfilDetails from "./components/profilDetails"
-import Header from "./components/header"
 import Home from "./pages/Home"
 import Login from "./pages/Login"
+import SignUp from "./pages/SignUp"
 import Setting from "./pages/setting"
 import Gaming from "./pages/Gaming"
+
 function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
+  )
+}
+
+function AppContent() {
+  const location = useLocation()
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
   const toggleSidebar = () => {
@@ -29,19 +39,36 @@ function App() {
     setIsSidebarOpen(false)
   }
 
+  // Pages sans layout (pas de header, pas de sidebar)
+  const authPages = ["/", "/signup"]
+  const isAuthPage = authPages.includes(location.pathname)
+
   return (
-    <Router>
-       <Header onToggleSidebar={toggleSidebar} />
+    <>
+      {/* Header */}
+      {!isAuthPage && <Header onToggleSidebar={toggleSidebar} />}
+
       <div className="min-h-screen bg-[#1C1C1D] dark:bg-gray-900 flex">
-
         {/* Sidebar */}
-        <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
+        {!isAuthPage && (
+          <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
+        )}
 
-        {/* Contenu */}
-        <main className="flex-1 p-4 pt-20 md:pt-26 md:ml-70 lg:ml-80 xl:ml-100">
+        {/* Contenu principal */}
+        <main
+          className={`flex-1 p-4 ${
+            isAuthPage
+              ? ""
+              : "pt-20 md:pt-26 md:ml-70 lg:ml-80 xl:ml-100"
+          }`}
+        >
           <Routes>
-            {/* <Route path="/login" element={<Login />} /> */}
+            {/* Auth */}
             <Route path="/" element={<Login />} />
+            <Route path="/signup" element={<SignUp />} />
+
+            {/* App */}
+            <Route path="/home" element={<Home />} />
             <Route path="/amis" element={<Friends />} />
             <Route path="/fils" element={<Fils />} />
             <Route path="/souvenirs" element={<Souvenirs />} />
@@ -53,14 +80,10 @@ function App() {
             <Route path="/profilDetails" element={<ProfilDetails />} />
             <Route path="/setting" element={<Setting />} />
             <Route path="/gaming" element={<Gaming />} />
-            <Route path="/home" element={<Home />} />
-
-
-
           </Routes>
         </main>
       </div>
-    </Router>
+    </>
   )
 }
 

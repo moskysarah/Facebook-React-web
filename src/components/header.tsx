@@ -10,7 +10,7 @@ interface HeaderProps {
 export default function Header({ onToggleSidebar }: HeaderProps) {
   const { theme, toggleTheme } = useTheme()
   return (
-     <div className="fixed top-0 left-0 right-0 z-60 bg-[#252728] border-2  border-[#3B3B3B] dark:bg-gray-800 m-0 p-0 flex items-center">
+     <div className="fixed top-0 left-0 right-0 z-60 bg-[#252728] border-1  border-[#3B3B3B] dark:bg-gray-800 m-0 p-0 flex items-center">
         <button
           onClick={onToggleSidebar}
           className="md:hidden p-2 text-white hover:bg-[#3C3F43] dark:hover:bg-gray-700 rounded"

@@ -13,9 +13,9 @@ export default function ProfilDetails() {
                 <button className="bg-[#242526] ml-2 cursor-pointer hover:bg-gray-700 text-white rounded-lg w-[10rem]  h-9">Modifier le profil</button>
 
         </div>
-        <div className="">
+        {/* <div className="">
 
-        </div>
+        </div> */}
       </div>
   )
 }

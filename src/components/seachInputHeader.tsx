@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 export default function SearchInputHeader() {
   return (
-    <div className="bg-[#252728] p-4 flex justify-between items-center border-1 border-[#3B3B3B]">
+    <div className="bg-[#252728] p-4 flex justify-between items-center">
 
       <div className="flex gap-2 items-center">
 
