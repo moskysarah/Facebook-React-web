@@ -9,13 +9,12 @@ interface FriendCardProps {
 
 function FriendCard({ image, name, followers }: FriendCardProps) {
     return (
-        <div className="shadow-lg p-4 bg-[#242526] rounded-lg w-full max-w-65 h-[30rem] border-1 border-gray-500 ">
+        <div className="shadow-lg p-4 bg-[#242526] rounded-lg w-full max-w-65 h-[26rem] border-1 border-gray-500 ">
             <img src={image} alt={name} className="rounded-t-lg w-full h-60 object-cover" />
             <h3 className="text-center mt-3 font-semibold text-white">{name}</h3>
-            <p className="text-center text-gray-400">Suivie par {followers} personnes</p>
+            <p className="text-center text-gray-400">Suivie par {followers}</p>
             <div className="flex flex-col gap-2">
                 <button className="bg-blue-900 w-full h-8 rounded-lg mt-2 cursor-pointer hover:bg-blue-800"><span className="text-blue-200 font-semibold text-sm">Ajouter </span></button>
-                <button className="bg-[#18191A] w-full h-8  rounded-lg cursor-pointer hover:bg-gray-800"><span className="font-semibold text-gray-300 text-sm">Supprimer</span></button>
             </div>
         </div>
     );
